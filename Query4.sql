@@ -1,3 +1,6 @@
-select Email from person
-group by Email
-having count(Email) > 1;
+SELECT 
+    Email
+FROM
+    person
+GROUP BY Email
+HAVING COUNT(Email) > 1;

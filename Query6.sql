@@ -1,3 +1,6 @@
-select class from courses
-group by Class
-having count(Class) >= 5;
+SELECT 
+    class
+FROM
+    courses
+GROUP BY Class
+HAVING COUNT(Class) >= 5;

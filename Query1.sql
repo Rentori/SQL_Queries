@@ -1,7 +1,9 @@
-select FirstName, LastName, City, State
-from person
-left join adress
-on person.PersonId = adress.PersonId;
+SELECT 
+    FirstName, LastName, City, State
+FROM
+    person
+        LEFT JOIN
+    adress ON person.PersonId = adress.PersonId;
 
 
 

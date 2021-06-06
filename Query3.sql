@@ -1,3 +1,11 @@
-select name as Employee 
-from employee x
-where Salary > (select Salary from employee y where x.ManagerId = y.ID);
+SELECT 
+    name AS Employee
+FROM
+    employee x
+WHERE
+    Salary > (SELECT 
+            Salary
+        FROM
+            employee y
+        WHERE
+            x.ManagerId = y.ID);
