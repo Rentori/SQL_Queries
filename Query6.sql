@@ -1,6 +1,9 @@
 SELECT 
     class
 FROM
-    courses
-GROUP BY Class
-HAVING COUNT(Class) >= 5;
+    (SELECT DISTINCT
+        *
+    FROM
+        courses) AS class
+GROUP BY class
+HAVING COUNT(class) >= 5;
